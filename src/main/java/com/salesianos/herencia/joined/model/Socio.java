@@ -1,7 +1,10 @@
 package com.salesianos.herencia.joined.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 
@@ -10,9 +13,8 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @ToString
-@Inheritance(strategy = InheritanceType.JOINED)
+@SuperBuilder
 public class Socio {
 
     @Id
@@ -36,3 +38,5 @@ public class Socio {
         this.dni = dni;
     }
 }
+
+

@@ -2,14 +2,15 @@ package com.salesianos.herencia.joined.model;
 
 import jakarta.persistence.Entity;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @ToString
+@SuperBuilder
 public class SocioAbonado extends Socio {
 
     private String asiento;
@@ -20,7 +21,8 @@ public class SocioAbonado extends Socio {
         this.asiento = asiento;
         this.fechaAbono = fechaAbono;
     }
-
-
-
 }
+
+
+
+

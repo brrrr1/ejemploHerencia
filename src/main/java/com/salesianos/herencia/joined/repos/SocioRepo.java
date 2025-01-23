@@ -8,6 +8,5 @@ import java.util.List;
 
 public interface SocioRepo extends JpaRepository<Socio, Long> {
 
-    @Query("select s from Socio s where TYPE(s) = Socio")
-    public List<Socio> socio();
+
 }

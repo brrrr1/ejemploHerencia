@@ -8,5 +8,5 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface SocioAbonadoRepo extends JpaRepository<SocioAbonado, Long> {
-    List<SocioAbonado> findByFechaVipBetween(LocalDate fechaAbono);
+
 }
